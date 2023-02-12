@@ -265,20 +265,20 @@ html {
   .name {
     width: 100%;
     text-align: center;
-    padding: 20px 20px 0 20px;
-    font-size: 28px;
+    padding: 1.25rem 1.25rem 0 1.25rem;
+    font-size: 1.75rem;
   }
 
   .position {
     text-align: center;
     color: #3ab795;
-    padding: 0 20px 10px 20px;
-    font-size: 18px;
+    padding: 0 1.25rem 0.625rem 1.25rem;
+    font-size: 1.125rem;
   }
 
   .description {
     text-align: center;
-    padding: 0 20px 20px 20px;
+    padding: 0 1.25rem 1.25rem 1.25rem;
   }
 
   .profile-image-container {
@@ -286,7 +286,7 @@ html {
     /* top: 18px; */
     /* right: 30px; */
     position: static;
-    padding-top: 20px;
+    padding-top: 1.25rem;
   }
 
   .profile-image {
@@ -294,18 +294,18 @@ html {
 
   .contact-data {
     grid-template-columns: 1fr;
-    row-gap: 10px;
-    padding: 10px 20px 10px 20px;
+    row-gap: 0.625rem;
+    padding: 0.625rem 1.25rem 0.625rem 1.25rem;
   }
 
   .main {
-    padding: 20px 20px;
+    padding: 1.25rem 1.25rem;
     display: flex;
     flex-flow: column nowrap;
-    row-gap: 30px;
+    row-gap: 1.875rem;
   }
 
   .article-title {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 }
