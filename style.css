@@ -1,0 +1,311 @@
+/*
+  Stiven's Custom CSS Reset
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  font-size: 16px;
+}
+
+/* Styles */
+/* #cv {
+  max-width: 900px;
+  margin: auto;
+  border: 1px solid #485665;
+} */
+
+.header {
+  background-color: #485665;
+  color: white;
+}
+
+.name {
+  padding-top: 1.25rem; /*20px*/
+  padding-left: 1.875rem; /*30px*/
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2rem; /*32px*/
+}
+
+.position {
+  color: #3ab795;
+  padding-left: 1.875rem; /*30px*/
+  padding-right: 8rem; /*100px*/
+  padding-bottom: 0.6rem; /*10px*/
+  font-size: 1.375rem; /*22px*/
+  font-weight: 100;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.description {
+  padding-left: 1.875rem; /*30px*/
+  padding-right: 8rem; /*100px*/
+  padding-bottom: 1.25rem; /*20px*/
+  font-size: 0.75rem; /*12px*/
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.profile-image-container {
+  position: absolute;
+  top: 18px;
+  right: 30px;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #3ab795;
+  background: transparent no-repeat center;
+  background-size: cover;
+  background-image: url("assets/stiven.png");
+}
+
+.contact-data {
+  background-color: #1e3231;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  padding-left: 1.875rem; /*30px*/
+  padding-right: 1.875rem; /*30px*/
+  padding-top: 0.625rem; /*10px*/
+  padding-bottom: 0.625rem; /*10px*/
+}
+
+.contact-data-item {
+  font-size: 0.75rem; /*12px*/
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.contact-data-icon {
+  width: 12px;
+  margin-right: 0.3125rem; /*5px*/
+}
+
+.main {
+  padding: 1.25rem 1.875rem;
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "exp sk"
+    "edu sk";
+  /* grid-template-columns: 1fr 1fr; */
+  row-gap: 1.25rem;
+  column-gap: 0.625rem;
+  /* delete this */
+  /* background-image: url('https://miro.medium.com/max/1400/1*RAAJDQ0YrGP6t8sbTFzEeQ.jpeg'); */
+  background-color: white;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.article-exp {
+  grid-area: exp;
+}
+
+.article-edu {
+  grid-area: edu;
+}
+
+.article-sk {
+  grid-area: sk;
+}
+
+.article-title {
+  color: #3ab795;
+  text-decoration: underline;
+  margin-bottom: 0.625rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 700;
+}
+
+.education-article {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 0.9375rem;
+}
+
+.education-item-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.education-item-subtitle {
+  font-size: 1rem;
+  font-weight: lighter;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.education-item-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.education-item-date {
+  color: #3ab795;
+  font-size: 0.75rem;
+  font-style: italic;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.education-item-location {
+  color: #3ab795;
+  font-size: 0.75rem;
+  font-style: italic;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.skills-article {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 0.625rem;
+}
+
+.skills-item {
+  background-color: #1e3231;
+  padding: 0.3125rem;
+  width: 80px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.75rem; /*12px*/
+  font-family: "Roboto Condensed", sans-serif;
+  /* display: flex;
+  flex-flow: row wrap;
+  gap: 10px; */
+}
+
+.skills-subitem-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+  padding-left: 0.625rem;
+}
+
+.skills-subitem {
+  /* flex-shrink: 2; */
+  background-color: #3ab795;
+  padding: 0.3125rem;
+  width: 80px;
+  /* height: 52px; */
+  height: 32px;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.625rem;
+  font-family: "Roboto Condensed", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.w84 {
+  width: 84px;
+}
+
+.skills-subitem:hover {
+  background-color: #485665;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#export-button {
+  background-color: #3ab795;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: 1px solid #1e3231;
+}
+
+#export-button:hover {
+  background-color: #1e3231;
+}
+
+#export-button:focus {
+  background-color: #485665;
+}
+
+.export-button-icon {
+  width: 18px;
+  margin-left: 0.3125rem;
+}
+
+@media screen and (max-width: 550px) {
+  .header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .name {
+    width: 100%;
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    font-size: 28px;
+  }
+
+  .position {
+    text-align: center;
+    color: #3ab795;
+    padding: 0 20px 10px 20px;
+    font-size: 18px;
+  }
+
+  .description {
+    text-align: center;
+    padding: 0 20px 20px 20px;
+  }
+
+  .profile-image-container {
+    /* position: absolute; */
+    /* top: 18px; */
+    /* right: 30px; */
+    position: static;
+    padding-top: 20px;
+  }
+
+  .profile-image {
+  }
+
+  .contact-data {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    padding: 10px 20px 10px 20px;
+  }
+
+  .main {
+    padding: 20px 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 30px;
+  }
+
+  .article-title {
+    font-size: 22px;
+  }
+}
