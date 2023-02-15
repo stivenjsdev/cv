@@ -23,15 +23,16 @@ html {
 }
 
 /* Styles */
-/* #cv {
+#cv {
   max-width: 900px;
   margin: auto;
-  border: 1px solid #485665;
-} */
+  border: 1px solid lightgray;
+}
 
 .header {
   background-color: #485665;
   color: white;
+  position: relative;
 }
 
 .name {
