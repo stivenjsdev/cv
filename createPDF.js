@@ -8,10 +8,6 @@ async function gerenratePDF() {
     articleTitles[i].style.textDecoration = 'none';
   }
 
-  // Delete max width in cv
-  const cvElement = document.getElementById('cv');
-  const maxWidth = cvElement.style.maxWidth;
-  cvElement.style.maxWidth = 'none';
 
   // Export to PDF
   const element = document.getElementById("cv");
@@ -23,8 +19,8 @@ async function gerenratePDF() {
     html2canvas: { scale: 5 }, // entre mas alto mas definicion
     enableLinks: true,
     jsPDF: {
-      unit: "in",
-      format: "legal", // or letter or a4 or legal or ledger
+      unit: "mm", // or px or cm
+      format: [210, 330], // or letter or a4 or legal or ledger, [210, 330] mm
       orientation: "portrait",
       precision: "16", // or 12
     },
@@ -36,8 +32,6 @@ async function gerenratePDF() {
     for(i = 0; i < articleTitles.length; i++) {
       articleTitles[i].style.textDecoration = 'underline';
     }
-    // Add again max width in cv
-    cvElement.style.maxWidth = maxWidth;
   } catch (error) {
     console.log(error.message)
   }
