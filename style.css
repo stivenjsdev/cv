@@ -23,10 +23,17 @@ html {
 }
 
 /* Styles */
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
 #cv {
-  max-width: 900px;
-  margin: auto;
-  border: 1px solid lightgray;
+  max-width: 817px;
+  /* margin: auto; */
+  /* border-left: 1px solid lightgray; */
+  /* border-right: 1px solid lightgray; */
 }
 
 .header {

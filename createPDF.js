@@ -3,10 +3,15 @@ async function gerenratePDF() {
 
   // Delete underline in article titles
   const articleTitles = document.getElementsByClassName('article-title');
-
+  
   for(i = 0; i < articleTitles.length; i++) {
     articleTitles[i].style.textDecoration = 'none';
   }
+
+  // Delete max width in cv
+  const cvElement = document.getElementById('cv');
+  const maxWidth = cvElement.style.maxWidth;
+  cvElement.style.maxWidth = 'none';
 
   // Export to PDF
   const element = document.getElementById("cv");
@@ -31,6 +36,8 @@ async function gerenratePDF() {
     for(i = 0; i < articleTitles.length; i++) {
       articleTitles[i].style.textDecoration = 'underline';
     }
+    // Add again max width in cv
+    cvElement.style.maxWidth = maxWidth;
   } catch (error) {
     console.log(error.message)
   }
