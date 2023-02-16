@@ -1,6 +1,10 @@
 async function gerenratePDF() {
   console.log("creating pdf...");
 
+  /**
+   * doc https://artskydj.github.io/jsPDF/docs/jsPDF.html
+   */
+
   // Delete underline in article titles
   const articleTitles = document.getElementsByClassName('article-title');
   
