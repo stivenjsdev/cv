@@ -24,7 +24,7 @@ async function gerenratePDF() {
     enableLinks: true,
     jsPDF: {
       unit: "mm", // or px or cm
-      format: [210, 330], // or letter or a4 or legal or ledger, [210, 330] mm
+      format: [210, 340], // or letter or a4 or legal or ledger, [210, 330] mm
       orientation: "portrait",
       precision: "16", // or 12
     },
