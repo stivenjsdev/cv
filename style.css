@@ -111,8 +111,8 @@ body {
   grid-template-rows: 2fr 3fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "exp sk"
-    "edu sk";
+    "sk exp"
+    "sk edu";
   /* grid-template-columns: 1fr 1fr; */
   row-gap: 1.25rem;
   column-gap: 0.625rem;
