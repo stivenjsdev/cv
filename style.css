@@ -108,7 +108,8 @@ body {
 .main {
   padding: 1.25rem 1.875rem;
   display: grid;
-  grid-template-rows: 2fr 3fr;
+  /* grid-template-rows: 2fr 3fr; */
+  grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "sk exp"
@@ -185,6 +186,18 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
+.education-item-description-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.education-item-description {
+  font-size: 0.75rem;
+  font-weight: lighter;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 5px;
+}
+
 .skills-article {
   display: flex;
   flex-flow: column wrap;
@@ -240,8 +253,8 @@ body {
 #export-button {
   background-color: #3ab795;
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   position: fixed;
   bottom: 10px;
   right: 10px;
