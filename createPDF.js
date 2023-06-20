@@ -20,7 +20,7 @@ async function generatePDF() {
   const opt = {
     margin: 0,
     filename: "stivenCv.pdf",
-    image: { type: "jpeg", quality: 1 },
+    image: { type: "jpeg", quality: 0.62 }, // 1 for a better quality in the profile image
     html2canvas: { scale: 5 }, // entre mas alto mas definicion
     enableLinks: true,
     jsPDF: {
