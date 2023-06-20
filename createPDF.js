@@ -2,7 +2,8 @@ async function generatePDF() {
   console.log("creating pdf...");
 
   /**
-   * doc https://artskydj.github.io/jsPDF/docs/jsPDF.html
+   * doc: https://github.com/eKoopmans/html2pdf.js
+   * doc: https://artskydj.github.io/jsPDF/docs/jsPDF.html
    */
 
   // Delete underline in article titles
